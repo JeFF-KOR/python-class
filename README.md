@@ -1,3 +1,7 @@
 # PYTHON-CLASS
 
-뭐라구요?
+## Contributor
+- niz
+- sssng
+- sole
+- nick
