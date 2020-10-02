@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RENDERED PAGE</h1>
+    <h1>RENDERED FROM FLASK USING JINJA:  {{testvar}}</h1>
+
+    {% if testvar %}
+    <h2>Testvar exists</h2>
+    {%else%}
+    <h2>Testvar not given</h2>
+    {% endif %}
+
+
+    <!-- Render Array -->
+
+
+    <h1>Create links</h1>
+    <a href="{{url_for('index')}}">LINK TO INDEX_PAGE</a>
+
+
+    <!-- Form page -->
+    <div class="container">
+        <form action="/process" method="POST" class="form-signin">
+            <div class="form-group">
+                <label for="inputName"> NAME</label>
+                <input type="text" name="name" id="inputName" class="form-control placeholder="Name" required autofocus>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+</html>
