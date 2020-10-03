@@ -1,7 +1,7 @@
 from flask import Flask, render_template, session, redirect, url_for
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'prettyprinted'
+app.config['SECRET_KEY'] = 'niz'
 
 @app.route('/')
 def index():
@@ -16,3 +16,6 @@ def set_background(mode):
 def drop_session():
     session.pop('mode', None)
     return redirect(url_for('index'))
+
+if __name__ =='__main__':
+    app.run(debug=True)
