@@ -4,7 +4,7 @@
 - niz
 - sssng
 - sole
-- nick
+- nick (HuiZZA)
 
 
 ## Upload your work in your dir
